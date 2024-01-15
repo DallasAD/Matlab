@@ -1,0 +1,10 @@
+x = linspace(-0.01,0.02);
+y = 10*sqrt(2)*sin(100*pi*x-((3*pi)/4));
+yNoShift = 10*sqrt(2)*sin(100*pi*(x+0.0125)-((3*pi)/4));
+plot(x,y);
+hold on;
+plot(x,yNoShift,'LineStyle','--');
+title('Sin Graphs');
+xlabel('Volatge In Volts');
+ylabel('Time In Seconds');
+legend('Sin With Time Shift','Sin Without Time Shift');
